@@ -36,6 +36,7 @@ x_dataframe = pd.DataFrame.sparse.from_spmatrix(adata.X, columns=feature_names)
 final_data = pd.concat([umap_df, x_dataframe],axis=1)
 
 app = Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP]) # Initializes the app
+server = app.server
 
 # Example umap scatter plot
 fig = px.scatter(final_data, x="UMAP_1", y="UMAP_2", color="cell_type")
