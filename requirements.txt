@@ -25,4 +25,7 @@ six
 tenacity
 Werkzeug
 zipp
+scanpy
+wget
+json
 gunicorn
