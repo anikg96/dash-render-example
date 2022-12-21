@@ -27,5 +27,4 @@ Werkzeug
 zipp
 scanpy
 wget
-json
 gunicorn
